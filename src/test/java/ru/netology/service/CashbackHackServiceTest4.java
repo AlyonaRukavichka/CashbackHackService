@@ -1,13 +1,14 @@
 package ru.netology.service;
 
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
-public class CashbackHackServiceTest {
-   @Test
-    void ifAmountLessThenBoundary() {
+
+public class CashbackHackServiceTest4 {
+    @Test
+    public void ifAmountLessThenBoundary() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
 
@@ -18,7 +19,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void ifAmountEqualsBoundary() {
+    public void ifAmountEqualsBoundary() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
 
@@ -29,7 +30,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-   void ifAmountIsLimitValues() {
+    public void ifAmountIsLimitValues() {
         CashbackHackService service = new CashbackHackService();
         int amount = 999;
 
@@ -40,7 +41,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-   void ifAmountMoreThenLimitValues() {
+    public void ifAmountMoreThenLimitValues() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1001;
 
